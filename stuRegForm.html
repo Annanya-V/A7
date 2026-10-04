@@ -1,84 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
     <style>
-        *,html{
+        * {
             margin: 0;
             padding: 0;
-        }
-        #box{
-            width: 600px;
-            height: 900px;
-            background-color: rgb(167, 196, 196);
-            margin: 0px auto;
-            padding: 10px 20px;
             box-sizing: border-box;
         }
-    
 
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #fdf3f5;
+        }
+
+        nav {
+            background-color: #7a2e3b;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        ul li a:hover {
+            background-color: #5a1f2b;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-family: Georgia, serif;
+            color: #5a1f2b;
+        }
+
+        form {
+            width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #43923c;
+            color: white;
+            padding: 6px 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
-    <div id="box">
-        <form>
-            <div>
-                <lable>Your Name :</lable>
-                <input type="text" placeholder="Enter your name"/>
-            </div>
-            <div>
-                <label>Your Email :</label> 
-                <input type="email" placeholder="Enter your email"/>
-            </div>
-            <div>
-                <label>Your Phone No. :</label>
-                <input type="tel" placeholder="Enter your phone number"/>
-            </div>
-            <div>
-                <label>Your DOB :</label>
-                <input type="date"/>
-            </div>
-            <div>
-                <label>Your Gender :</label>
-                <input type="radio" name="gender" value="male"/>
-                <label>Male</label>
-                <input type="radio" name="gender" value="female"/>
-                <label>Female</label>
-                <input type="radio" name="gender" value="other"/>
-                <label>Other</label>
-            </div>
-            <div>
-                <lable>Your Course</lable>
-                <input type="checkbox" name="course" value="html"/>
-                <label>HTML</label> 
-                <input type="checkbox" name="course" value="css"/>
-                <label>CSS</label>  
-                <input type="checkbox" name="course" value="javascript"/>
-                <label>JavaScript</label>
-            </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="portfolio.html">About Me</a></li>
+        </ul>
+    </nav>
 
-            <div>
-                <label>Your Country :</label>
-                <select>
-                    <option value="india">India</option>
-                    <option value="usa">USA</option>
-                    <option value="uk">UK</option>
-                    <option value="australia">Australia</option>
-                </select>
-            </div>
+    <h1>STUDENT REGISTRATION FORM</h1>
 
-            <div>
-                <label>Your Address :</label>
-                <textarea placeholder="Enter your address" cols="20" rows="5"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Submit"/>
-                <input type="reset" value="Reset"/>
-            </div>
-        </form>
+    <form autocomplete="on">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
-    </div>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" placeholder="Enter your age"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your college email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" minlength="8"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        Gender:
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="usa">USA</option>
+        </select><br><br>
+
+        <label for="message">About Me:</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about yourself"></textarea><br><br>
+
+        Courses:<br>
+        <input type="checkbox" id="course1" name="courses" value="course1">
+        <label for="course1">DSA/Competitive Programming</label><br>
+        <input type="checkbox" id="course2" name="courses" value="course2">
+        <label for="course2">Web Development</label><br>
+        <input type="checkbox" id="course3" name="courses" value="course3">
+        <label for="course3">Data Science</label><br>
+        <input type="checkbox" id="course4" name="courses" value="course4">
+        <label for="course4">UI/UX Designing</label><br>
+        <input type="checkbox" id="course5" name="courses" value="course5">
+        <label for="course5">Cyber Security</label><br>
+        <input type="checkbox" id="course6" name="courses" value="course6">
+        <label for="course6">Machine Learning</label><br><br>
+
+        <input type="checkbox" id="terms" name="terms" value="agree">
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
 </body>
+
 </html>
