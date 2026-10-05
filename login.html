@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #fdf3f5;
+        }
+
+        nav {
+            background-color: #7a2e3b;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        ul li a:hover {
+            background-color: #5a1f2b;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-family: Georgia, serif;
+            color: #5a1f2b;
+        }
+
+        form {
+            width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #43923c;
+            color: white;
+            padding: 6px 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="stuRegForm.html">Register</a></li>
+            <li><a href="portfolio.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <h1>LOG IN</h1>
+
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your college email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <button type="submit">Log In</button>
+        <button type="reset">Reset</button>
+
+        <p>New here? <a href="stuRegForm.html">Register</a></p>
+    </form>
+</body>
+
+</html>
