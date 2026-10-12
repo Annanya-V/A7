@@ -1,0 +1,345 @@
+/* ========== BASIC SETTINGS ========== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* ========== HEADER ========== */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    margin: 0;
+    font-size: 30px;
+}
+
+.logo span {
+    background-color: #f8cb46;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.delivery {
+    font-size: 14px;
+    color: gray;
+}
+
+.search {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search:focus {
+    outline: 2px solid green;
+}
+
+.login {
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: darkgreen;
+}
+
+/* ========== BANNER ========== */
+.banner {
+    background: linear-gradient(to right, #f8cb46, #ff9f43);
+    text-align: center;
+    padding: 70px 20px;
+    margin: 20px 30px;
+    border-radius: 15px;
+}
+
+.banner h2 {
+    font-size: 44px;
+    margin: 0 0 10px 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 0 0 25px 0;
+}
+
+.order-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: green;
+}
+
+/* ========== SECTIONS AND ROWS ========== */
+.container {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ========== PROMO CARDS ========== */
+.promo {
+    flex: 1;
+    min-width: 250px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.promo h3 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+.promo p {
+    margin: 0;
+}
+
+.promo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.promo1 {
+    background-color: #bfe3c5;
+}
+
+.promo2 {
+    background-color: #fbc6bd;
+}
+
+.promo3 {
+    background-color: #c9d9f5;
+}
+
+/* ========== CATEGORIES ========== */
+/* The box is a column: photo on top, title in a thin strip below */
+.category {
+    flex: 1;
+    min-width: 140px;
+    height: 130px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+/* The photo fills all the space the title does not need */
+.category img {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    display: block;
+}
+
+.category p {
+    margin: 0;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+/* ========== PRODUCTS ========== */
+.product {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Product photo: same size for every product */
+.product img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0 0 0;
+}
+
+.product p {
+    margin: 5px 0;
+    color: gray;
+}
+
+/* Delivery time tag */
+.product .time {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Price and old price */
+.product .price {
+    color: black;
+    font-weight: bold;
+}
+
+.old-price {
+    color: gray;
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* ADD button */
+.product button {
+    background-color: #e8f5ea;
+    color: green;
+    border: 1px solid green;
+    padding: 8px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: green;
+    color: white;
+}
+
+/* ========== WHY DASHKART ========== */
+.why {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why h3 {
+    margin: 0 0 8px 0;
+    color: green;
+}
+
+.why p {
+    margin: 0;
+    color: gray;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background-color: #1f1f1f;
+    color: #bbbbbb;
+    margin-top: 50px;
+    padding: 40px 30px 20px 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    width: 200px;
+}
+
+.footer-col h3 {
+    color: #f8cb46;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.footer-col h4 {
+    color: white;
+    margin: 0 0 12px 0;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-col a {
+    display: block;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+    color: #f8cb46;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #444444;
+    margin-top: 30px;
+    padding-top: 20px;
+}
