@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cart - Dashkart</title>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="stylelogdash.css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="index.html" class="logo-link">
+            <h1 class="logo">dash<span>kart</span></h1>
+        </a>
+        <p class="delivery">Delivery in 10 minutes</p>
+        <input type="text" placeholder="Search for milk, bread, eggs..." class="search">
+        <a href="login.html"><button class="login">Login</button></a>
+        <a href="cart.html"><button class="cart">My Cart</button></a>
+    </div>
+
+    <div class="cart-layout">
+
+        <!-- Left side: items -->
+        <div class="cart-items">
+            <h2>My Cart</h2>
+            <p class="delivery-note">Delivery in 10 minutes. Shipment of 3 items</p>
+
+            <div class="cart-item">
+                <img src="https://c.ndtvimg.com/2023-02/23m6o5gs_amul-milk_640x480_03_February_23.jpg?im=FeatureCrop,algorithm=dnn,width=400,height=225&q=70" alt="Milk">
+                <div class="cart-info">
+                    <h3>Milk</h3>
+                    <p>500 ml</p>
+                </div>
+                <div class="qty-box">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+                <p class="cart-price">Rs. 54</p>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://media.istockphoto.com/id/1356240873/photo/closeup-macro-of-pasture-raised-farm-fresh-dozen-brown-eggs-store-bought-from-farmer-in.jpg?s=612x612&w=0&k=20&c=UFRlOU6tQBq5HVyQK_yhd3czoQlkifzdg10BsHJhGuk=" alt="Eggs">
+                <div class="cart-info">
+                    <h3>Eggs</h3>
+                    <p>6 pieces</p>
+                </div>
+                <div class="qty-box">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+                <p class="cart-price">Rs. 54</p>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://pantrymama.com/wp-content/uploads/2025/04/SOURDOUGH-BROWN-BREAD-HORIZONTAL-IMAGE.jpg" alt="Brown Bread">
+                <div class="cart-info">
+                    <h3>Brown Bread</h3>
+                    <p>400 g</p>
+                </div>
+                <div class="qty-box">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+                <p class="cart-price">Rs. 45</p>
+            </div>
+
+            <a href="index.html" class="continue">&larr; Continue shopping</a>
+        </div>
+
+        <!-- Right side: bill -->
+        <div class="bill">
+            <h2>Bill details</h2>
+
+            <div class="bill-row">
+                <span>Items total</span>
+                <span>Rs. 153</span>
+            </div>
+
+            <div class="bill-row">
+                <span>Delivery charge</span>
+                <span class="free">FREE</span>
+            </div>
+
+            <div class="bill-row">
+                <span>Handling charge</span>
+                <span>Rs. 2</span>
+            </div>
+
+            <div class="bill-row bill-total">
+                <span>Grand total</span>
+                <span>Rs. 155</span>
+            </div>
+
+            <button class="pay-btn">Proceed to pay</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
