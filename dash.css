@@ -185,6 +185,13 @@ body {
 .order-btn:hover {
     background-color: green;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+#items {
+    scroll-margin-top: 90px;
+}
 
 .container {
     padding: 10px 30px;

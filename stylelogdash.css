@@ -50,6 +50,22 @@
 .login-box input:focus {
     outline: 2px solid green;
 }
+/* Checkbox row on the sign up page */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-box .terms input {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+.login-box .terms label {
+    font-weight: normal;
+    color: gray;
+}
 
 .login-btn {
     width: 100%;

@@ -19,16 +19,22 @@
 
             <form>
                 <label>Email</label>
-                <input type="email" placeholder="Enter your email">
+                <input type="email" placeholder="Enter your email" minlength="3" maxlength="30" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    title="Enter a valid email with 25 to 30 characters, like grocery.shopper01@gmail.com">
+                <p class="hint">Email must be 25 to 30 characters long</p>
 
                 <label>Password</label>
-                <input type="password" placeholder="Enter your password">
+                <input type="password" placeholder="Enter your password" minlength="6" maxlength="20" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}"
+                    title="Password must have 6 to 20 characters with at least one capital letter, one small letter and one number">
+                <p class="hint">Use 6 to 20 characters with a capital letter, a small letter and a number</p>
 
                 <button type="submit" class="login-btn">Login</button>
             </form>
 
             <p class="login-bottom">Don't have an account? <a href="#">Sign up</a></p>
-            <p class="login-bottom"><a href="index.html">Back to home</a></p>
+            <p class="login-bottom"><a href="dashkart.html">Back to home</a></p>
 
         </div>
     </div>

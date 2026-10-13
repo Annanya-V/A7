@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - Dashkart</title>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="stylelogdash.css">
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+
+            <a href="dashkart.html" class="logo-link">
+                <h1 class="logo">dash<span>kart</span></h1>
+            </a>
+
+            <h2>Create your account</h2>
+            <p class="login-sub">Sign up and get 20% off your first order</p>
+
+            <form>
+                <label>Full name</label>
+                <input type="text" placeholder="Enter your full name" minlength="3" maxlength="30" required
+                    pattern="[A-Za-z ]{3,30}"
+                    title="Name can only have letters and spaces (3 to 30 characters)">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" minlength="25" maxlength="30" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    title="Enter a valid email with 25 to 30 characters, like grocery.shopper01@gmail.com">
+                <p class="hint">Email must be 25 to 30 characters long</p>
+
+                <label>Phone number</label>
+                <input type="tel" placeholder="Enter your 10 digit number" minlength="10" maxlength="10" required
+                    pattern="[6-9][0-9]{9}"
+                    title="Enter a 10 digit mobile number starting with 6, 7, 8 or 9">
+
+                <label>Password</label>
+                <input type="password" placeholder="Create a password" minlength="6" maxlength="20" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}"
+                    title="Password must have 6 to 20 characters with at least one capital letter, one small letter and one number">
+                <p class="hint">Use 6 to 20 characters with a capital letter, a small letter and a number</p>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the Terms of use and Privacy policy</label>
+                </div>
+
+                <button type="submit" class="login-btn">Sign Up</button>
+            </form>
+
+            <p class="login-bottom">Already have an account? <a href="login.html">Login</a></p>
+            <p class="login-bottom"><a href="dashkart.html">Back to home</a></p>
+
+        </div>
+    </div>
+
+</body>
+</html>
